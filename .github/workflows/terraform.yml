@@ -7,7 +7,7 @@ on:
 
 jobs:
   terraform:
-    name: 'Deploy Ec2'
+    name: 'Deploy AWS Ec2'
     runs-on: ubuntu-latest
 
     steps:
