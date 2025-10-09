@@ -20,12 +20,12 @@ data "aws_ami" "windows" {
 }
 
 # Launch EC2 instance
-resource "aws_instance" "windows_server" {
+resource "aws_instance" "windows_server1" {
   ami           = data.aws_ami.windows.id
   instance_type = "t3.medium"
   key_name      = "Terrakey"
   subnet_id     = data.aws_subnet.practice_subnet.id
-  vpc_security_group_ids = [data.aws_security_group.practice_sg.id]
+  vpc_security_group_ids = [data.aws_security_group.terrasg.id]
 
   
 tags = {

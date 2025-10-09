@@ -1,7 +1,7 @@
-data "aws_security_group" "practice_sg" {
+data "aws_security_group" "terrasg" {
   filter {
     name   = "tag:Name"
-    values = ["Practice_SG"]
+    values = ["TerraSG"]
   }
 
   vpc_id = data.aws_vpc.practice_vpc.id
