@@ -34,7 +34,7 @@ tags = {
     Owner       = "Nadeem Ahmed Kafil Siddiqui"
     Project     = "Infra Automation"
     Source      = "Terraform Files"
-    Department  = "ITOps"
+    Department  = "IT"
   }
 
   
