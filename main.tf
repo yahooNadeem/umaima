@@ -1,8 +1,6 @@
 provider "aws" {
   region = "eu-west-1"
 }
-
-
 # Get latest Windows Server AMI
 data "aws_ami" "windows" {
   most_recent = true
