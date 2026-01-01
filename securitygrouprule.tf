@@ -8,7 +8,7 @@ resource "aws_security_group_rule" "rdp_access" {
   description       = "Allow RDP access from terradevmachine"
 }
 
-resource "aws_security_group_rule" "SMB_access" {
+resource "aws_security_group_rule" "SMBaccess" {
   type              = "ingress"
   from_port         = 445
   to_port           = 445
