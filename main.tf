@@ -1,6 +1,8 @@
 provider "aws" {
   region = "eu-west-1"
 }
+
+
 # Get latest Windows Server AMI
 data "aws_ami" "windows" {
   most_recent = true
@@ -32,7 +34,7 @@ tags = {
     Owner       = "Nadeem Ahmed Kafil Siddiqui"
     Project     = "Infra Automation"
     Source      = "Terraform Files"
-    Department  = "IT"
+    Department  = "IT-Ops"
   }
 
   
