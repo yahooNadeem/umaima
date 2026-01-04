@@ -29,7 +29,7 @@ resource "aws_instance" "windows_server1" {
 
   
 tags = {
-    Name        = "Terraform-EC2"
+    Name        = "TerraformEC2"
     Environment = "Development"
     Owner       = "Nadeem Ahmed Kafil Siddiqui"
     Project     = "Infra Automation"
