@@ -25,7 +25,7 @@ resource "aws_instance" "windows_server1" {
   instance_type = "t3.medium"
   key_name      = "Terrakey"
   subnet_id     = data.aws_subnet.practice_subnet.id
-  vpc_security_group_ids = [data.aws_security_group.terrasg.id]
+  vpc_security_group_ids = data.aws_security_group.terrasg.id
 
   
 tags = {
