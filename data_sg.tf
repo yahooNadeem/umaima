@@ -3,6 +3,8 @@ data "aws_security_group" "terrasg" {
     name   = "tag:Name"
     values = ["TerraSG"]
   }
-
-  vpc_id = data.aws_vpc.practice_vpc.id
+filter {
+    name   = "vpc-id"
+    values = [data.aws_vpc.practice_vpc.id]
+  }
 }
